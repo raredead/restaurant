@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  background-color: blanchedalmond;
+}
+
+header {
+  min-height: 100%;
+  margin-bottom: 70px;
+}
+header .wrapper {
+  background-color: yellow;
+}
+header .content {
+  max-width: 1170px;
+  margin: 0px auto;
+}
+header .head {
+  display: flex;
+  justify-content: space-between;
+}
+header .title {
+  padding: 50px 0;
+  font-size: 45px;
+}
+header .nav {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+header ul {
+  display: flex;
+  list-style: none;
+}
+header li {
+  margin-right: 30px;
+}
+header li:last-child {
+  margin-right: 0;
+}
+header a {
+  color: black;
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+header a:hover {
+  color: #222;
+}
+header a:before,
+header a:after {
+  content: "";
+  background: #e74c3c;
+  position: absolute;
+  width: 0;
+  height: 2px;
+  transition: all 0.3s linear;
+}
+header a:before {
+  top: 0;
+  left: 0;
+}
+header a:after {
+  top: 100%;
+  right: 0;
+}
+header a:hover:before,
+header a:hover:after {
+  width: 100%;
+}
+
+.overlay {
+  display: flex;
+  margin-bottom: 70px;
+  position: relative;
+  min-height: 100%;
+}
+.overlay .cont {
+  max-width: 1170px;
+  margin: 0px auto;
+  background-color: rgba(247, 0, 0, 0.651);
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.overlay .title_nm {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.overlay .cont__txt {
+  text-align: center;
+  font-size: 20px;
+  padding: 0 20px;
+}
+.overlay h2 {
+  text-align: center;
+}
+.overlay .mail {
+  text-align: center;
+  font-size: 17px;
+  padding: 10px 0;
+}
+.overlay .tel {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+.overlay hr {
+  border: 1px solid black;
+}
+
+footer {
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+footer .footer__row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+}
+footer .footer__text {
+  color: blanchedalmond;
+  font-size: 20px;
+  letter-spacing: 0.3px;
+}

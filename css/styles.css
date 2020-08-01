@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  background-color: blanchedalmond;
+}
+
+.jopa {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+header {
+  min-height: 100%;
+  margin-bottom: 70px;
+  flex: 1 0 auto;
+}
+header .wrapper {
+  background-color: yellow;
+}
+header .content {
+  max-width: 1170px;
+  margin: 0px auto;
+}
+header .head {
+  display: flex;
+  justify-content: space-between;
+}
+header .title {
+  padding: 50px 0;
+  font-size: 45px;
+}
+header .nav {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+header ul {
+  display: flex;
+  list-style: none;
+}
+header li {
+  margin-right: 30px;
+}
+header li:last-child {
+  margin-right: 0;
+}
+header a {
+  color: black;
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+header a:hover {
+  color: #222;
+}
+header a:before,
+header a:after {
+  content: "";
+  background: #e74c3c;
+  position: absolute;
+  width: 0;
+  height: 2px;
+  transition: all 0.3s linear;
+}
+header a:before {
+  top: 0;
+  left: 0;
+}
+header a:after {
+  top: 100%;
+  right: 0;
+}
+header a:hover:before,
+header a:hover:after {
+  width: 100%;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0px auto;
+  display: flex;
+}
+.container .txt {
+  flex: 1 1 auto;
+  padding: 0 100px 0 0;
+}
+.container h2 {
+  font-size: 40px;
+  padding: 0 0 0 15px;
+}
+.container p {
+  font-size: 30px;
+}
+.container .img {
+  flex: 0 0 300px;
+}
+.container hr {
+  border: 3px solid black;
+}
+
+.prom {
+  padding-bottom: 70px;
+}
+.prom .prom__title {
+  text-align: center;
+  margin: 0 0 30px 0;
+  font-size: 25px;
+  font-weight: 800;
+}
+.prom .prom__body {
+  max-width: 990px;
+  margin: 0px auto;
+}
+.prom .prom__row {
+  display: flex;
+  margin: 0px -22.5px;
+}
+.prom .prom__column {
+  flex: 0 1 33.333%;
+  padding: 0px 22.5px;
+  display: flex;
+}
+.prom .prom__item {
+  background-color: yellow;
+  color: black;
+  border-radius: 5px;
+  border: 1px solid yellow;
+  padding: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+.prom .prom__subtitle {
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 12px 0;
+}
+.prom .prom__label {
+  text-align: center;
+  background-color: black;
+  color: blanchedalmond;
+  padding: 15px 0;
+  font-size: 25px;
+}
+.prom .prom__txt {
+  padding: 20px;
+  font-size: 25px;
+  line-height: 24px;
+  flex: 1 1 auto;
+}
+.prom .prom__btn {
+  display: block;
+  margin: 0px 20px;
+  height: 40px;
+  background-color: black;
+  color: blanchedalmond;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+footer {
+  background-color: black;
+  flex: 0 0 auto;
+}
+footer .footer__row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+}
+footer .footer__text {
+  color: blanchedalmond;
+  font-size: 20px;
+  letter-spacing: 0.3px;
+}
